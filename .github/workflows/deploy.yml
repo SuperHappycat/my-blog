@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 20
       - run: npm install
-      - run: npm run build
+      - run: PATHPREFIX=/my-blog/ npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
