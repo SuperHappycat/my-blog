@@ -1,7 +1,41 @@
 ---
 layout: base.njk
-title: My Blog
+title: SuperHappycat
 ---
 
-<h1>Welcome</h1>
-<p>Check out my <a href="{{ '/blog/' | url }}">blog posts</a>.</p>
+<section class="hero">
+  <h1>Hi, I'm SuperHappycat</h1>
+  <p class="tagline">Curious about everything. Writing about what I find.</p>
+</section>
+
+<section class="home-section">
+  <h2>Recent Posts</h2>
+  <ul class="post-list">
+  {%- for post in collections.post | reverse %}
+    {%- if loop.index <= 3 %}
+    <li>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </li>
+    {%- endif %}
+  {%- endfor %}
+  </ul>
+  <p><a href="{{ '/blog/' | url }}">View all posts &rarr;</a></p>
+</section>
+
+<section class="home-section">
+  <h2>What This Place Is</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>&lt;/&gt; Code</h3>
+      <p>Projects, experiments, and things I've built or broken.</p>
+    </div>
+    <div class="card">
+      <h3>&#9998; Writing</h3>
+      <p>Stories, ideas, and creative experiments.</p>
+    </div>
+    <div class="card">
+      <h3>&#127758; Discovery</h3>
+      <p>This may actually just be a collection of whatever rabbit hole I fall into next.</p>
+    </div>
+  </div>
+</section>
