@@ -72,3 +72,10 @@ ul {
 ul li {
   margin-bottom: 0.5rem;
 }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
