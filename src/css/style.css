@@ -45,9 +45,46 @@ body {
 }
 
 main {
-  max-width: 40rem;
+  max-width: 42rem;
   margin: 5rem auto 2rem;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
+}
+
+a {
+  color: #7c8aff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.home-section {
+  margin-top: 3rem;
+}
+
+.home-section h2 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #2a2a4a;
+  padding-bottom: 0.5rem;
 }
 
 h1 {
@@ -60,17 +97,19 @@ p {
   margin-bottom: 1rem;
 }
 
-a {
-  color: #7c8aff;
-}
-
 ul {
   list-style: none;
   padding: 0;
 }
 
-ul li {
-  margin-bottom: 0.5rem;
+.post-list li {
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.post-list li:hover {
+  background: #1a1a2e;
 }
 
 .cards {
@@ -78,4 +117,30 @@ ul li {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+
+.card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #7c8aff;
+}
+
+.card h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  color: #999;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
 
